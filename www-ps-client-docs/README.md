@@ -34,7 +34,6 @@ Please document steps, including some description, not only screenshots.
 ### First step
 * step description
 * step description
-![1](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png)
 
 ### First step with sized image
 <img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/www-ps-client-docs/img/ps2client.png" width="250">
