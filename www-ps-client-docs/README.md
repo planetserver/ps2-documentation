@@ -11,13 +11,13 @@
 
 ## Authors:
 
-@RamiroMF, @aprossi
+[@RamiroMF](https://github.com/ramiromf), [@aprossi](https://github.com/aprossi)
 
 ## Change log
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 0             | @aprossi      | template   |
+| 0             | A. P. Rossi      | template   |
 
 
 
@@ -37,7 +37,7 @@ Please document steps, including some description, not only screenshots.
 ![1](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png)
 
 ### First step with sized image
-<img src="https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png" width="200">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/www-ps-client-docs/img/ps2client.png" width="250">
 
 ### Second step
 * step description
