@@ -12,3 +12,9 @@ Ingested datasets derive from NASA Planetary Data System (PDS) and ESA Planetary
 # More info
 
 on http://planetserver.eu
+
+## Guides and tutorials
+
+### PlanetServer web client walkthrough
+
+* [ps-web-client-basic-usage](ps-web-client-basic-usage)
