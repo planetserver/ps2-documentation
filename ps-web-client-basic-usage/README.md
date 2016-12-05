@@ -29,11 +29,10 @@ TBA
 # Requirements and dependencies
 
 ## Steps
-Please document steps, including some description, not only screenshots.
 
-### First step
-* step description
-* step description
+### Access client
+
+###
 
 ### First step with sized image
 <img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/www-ps-client-docs/img/ps2client.png" width="250">
@@ -45,9 +44,11 @@ Please document steps, including some description, not only screenshots.
 
 ## References
 
-TBA + URL
+TBA
 
 
 ## Links
 
-TBA
+* [http://access.planetserver.eu/](http://access.planetserver.eu/)
+  * [http://mars.planetserver.eu/](http://mars.planetserver.eu/)
+  * [http://moon.planetserver.eu/](http://moon.planetserver.eu/)
