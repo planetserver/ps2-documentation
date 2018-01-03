@@ -38,7 +38,7 @@ If this is your first time going to our site, you will be asked if you are willi
 
 If you have already done the tour you will land directly on the Client
 
-![alt text](images/intro_web.png)
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/blob/master/user_documentation/images/intro_web.png" width="500"></img>
 
 This tutorial will go deeper than that pilot.
 
