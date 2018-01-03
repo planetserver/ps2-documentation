@@ -38,7 +38,7 @@ If this is your first time going to our site, you will be asked if you are willi
 
 If you have already done the tour you will land directly on the Client
 
-<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/blob/master/user_documentation/images/intro_web.png" width="500"></img>
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/%20intro_web.png?token=AMI5Y7VxH1XRaX_hBhc8w4yQFU_BgxTLks5aVfb7wA%3D%3D" width="90%"></img>
 
 This tutorial will go deeper than that pilot.
 
@@ -64,9 +64,15 @@ Full list of projections is presented below:
 
 <img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/4_basemap_viking.png?token=AQvBJJFAWG344k1QQ1EbkwxLeOqR3AUAks5YtZ8EwA%3D%3D" width="500">
 
-## Gazetteer and Landsites
+## Available Layers
 
-Gazetteer and landsites on the Mars are options available next to Basemap. Click on "show" and "hide" and you can see them or make them vanish on your map.
+At the moment two CRISM datasets are available on PlanetServer. CRISM TRDR images are fully working and CRISM MRDR images are being tested.
+
+
+
+## Gazetteer and Landing sites
+
+Gazetteer and landing sites on Mars are options available next to Basemap. Click on "show" and "hide" and you can see them or make them vanish on your map.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/5_gazetteer_landsites.png?token=AQvBJMsg7jt6zpSZTxspx_ypgyM8U6Rvks5YtZ8SwA%3D%3D" width="500">
 
@@ -78,7 +84,6 @@ As you scroll closer to the surface, you can see more points with name on it. Ga
 
 Using this button along with its three options, you can go to specific places on surface of Mars. You can either decide where to go via "region", "footprint" or "lat, lon".  
 
-The website below is the map shows you the latest landsite.  
 
 Using "Region" selection:  
 
@@ -103,7 +108,7 @@ Using WCPS Queries:
 
 ## Spectra Analyzing & Spectra Ratio
 
-On the left hand side of main page, you can find three buttons giving you general information of PlanetServer, spectra analyzing tool and spectra ratio tool.  
+On the right hand side of main page, you can find four buttons giving you general information of PlanetServer, spectra analyzing tool, spectra ratio tool and histogram tool.  
 
 As you can see, you can choose several points and plot them on the same graph.  
 
@@ -137,17 +142,11 @@ Download the coverage in GeoTiff or PNG form is also possible.
 
 ## For Moon's PlanetServer
 
-On the top of PlanetServer page, you can switch between Mars and Moon by clicking two planets on the left hand side of the bar.  Also you can sign into the PlanetServer and back to main page.  
+On the top of PlanetServer page, you can switch between Mars and Moon by clicking two planets on the left hand side of the bar. Clicking Moon will bring you to Moon's PlanetServer interface.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/Client-Server-Tutorial/7_Top.png?token=AQvBJL9zIgSffe0fAImYZi1BSwfl_O2xks5YruC9wA%3D%3D" width="1000" alt="bar">
 
-Clicking Moon will bring you to Moon's PlanetServer interface.  
-
-During transition, you'll see this page. In a short while, you can see Moon page.  
-
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/Client-Server-Tutorial/8_Transition.png?token=AQvBJGXF-872UcX29qh4P1a15mfSLvwNks5YruEOwA%3D%3D" width="500" alt="transition">
-
-The functions of Moon PlanetServer are identical to those I've introduced in Mars PlanetServer.  
+The functions of Moon PlanetServer are identical to those introduced in Mars PlanetServer.  
 
 # References
 
