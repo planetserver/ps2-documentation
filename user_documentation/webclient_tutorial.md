@@ -24,7 +24,7 @@ Lead Developer - Ramiro Marco Figuera
 
 Solution Developer - Bang Pham Huu  
 
-Junior Developer - Tsvetan Rankov  
+Junior Developer - Anik Halder, Keyuan Yin and Tsvetan Rankov  
 
 CREDITS:  
 
@@ -48,11 +48,11 @@ On the right hand side of the page, you can click to expand the page. In this ex
 
 First image shows you when I chose Mercator projection.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/1_projection_mercator.png?token=AQvBJN5jbUqpd0iNA18XrpcmWtHXv-uoks5YtZ3MwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/mercator.png?token=AMI5Y98i0u8m_4yi7aA57XNVX6SYKvTGks5aVfhPwA%3D%3D" width="500">
 
 The second image shows you when I chose South Pole projection.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/2_projection_south_pole.png?token=AQvBJFeb7oYcEKF8IVx8tG0s7vLnyofmks5YtZ5bwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/south_pole.png?token=AMI5YwaOowlpIVqmz73UC2UBarDThX6Oks5aVfhhwA%3D%3D" width="500">
 
 Full list of projections is presented below:  
 
@@ -60,25 +60,26 @@ Full list of projections is presented below:
 
 2 basemaps you can choose are Viking Mosaic and MOLA Colored.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/3_basemap_mola_colored.png?token=AQvBJDdquxnOElhMx3b2ewNMFwd-GVAlks5YtZ7MwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/viking.png?token=AMI5Y75IyPimB3GFTuyBh6gE6XCrdpjEks5aVfh5wA%3D%3D" width="500">
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/4_basemap_viking.png?token=AQvBJJFAWG344k1QQ1EbkwxLeOqR3AUAks5YtZ8EwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/mola.png?token=AMI5Y3CuZL2uc0VgkW_TWn_mJFpbZZd5ks5aVfiXwA%3D%3D" width="500">
 
 ## Available Layers
 
-At the moment two CRISM datasets are available on PlanetServer. CRISM TRDR images are fully working and CRISM MRDR images are being tested.
+At the moment two CRISM datasets are available on PlanetServer. CRISM TRDR images are fully working and the ones loaded by default. CRISM MRDR images are being tested and only a few images on the north pole are available.
 
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/mrdr.png?token=AMI5Y3yMUrPIv0DliPLoUkECUHpovvNGks5aVfjZwA%3D%3D" width="500">
 
 
 ## Gazetteer and Landing sites
 
 Gazetteer and landing sites on Mars are options available next to Basemap. Click on "show" and "hide" and you can see them or make them vanish on your map.
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/5_gazetteer_landsites.png?token=AQvBJMsg7jt6zpSZTxspx_ypgyM8U6Rvks5YtZ8SwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/landing.png?token=AMI5Y00kzu-YKLN0zs6qVqxoO9HNhZOvks5aVfj1wA%3D%3D" width="500">
 
 As you scroll closer to the surface, you can see more points with name on it. Gazetteer can be chosen and selected out using range bar.    
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/6_gazetteer_closer_range.png?token=AQvBJAQBsxmgNAFj1SXRf2uV4YdgvnXdks5YtZ9UwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/gaz.png?token=AMI5Y7KDL0M9IQkJ05KukWebHkw-WzjHks5aVfkKwA%3D%3D" width="500">
 
 ## Goto button
 
@@ -87,64 +88,66 @@ Using this button along with its three options, you can go to specific places on
 
 Using "Region" selection:  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/7_goto_region.png?token=AQvBJL09A8Y_euTK34BLwfx477aO9Oyaks5YtZ9gwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/goto_name.png?token=AMI5Y7V_YnaqPBWamXNLq26403SGX9Akks5aVfkrwA%3D%3D" width="500">
 
 Using "footprint" selection:  
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/8_goto_footprint.png?token=AQvBJNYESNMptMlA05P5lkhFj8zXGw48ks5YtaAbwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/goto_image.png?token=AMI5Y3EXyam3dX4hYz69JsNHTkCJOQpEks5aVflDwA%3D%3D" width="500">
+
+Using Latitude and Longitude:
+
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/goto_latlong.png?token=AMI5Y1yIVKabYKcdN1skav5DocTMY7WNks5aVfltwA%3D%3D" width="500">
+
 
 ## RGB Combinator
 
-First you need to select a footprint. After you select one footprint, the converage will become a yellow circle.  
+First you need to select a footprint. After you select one footprint, the coverage will become a yellow circle.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/9_selected_footprint.png?token=AQvBJBLfsSrbBq_85qcLjNyg-m3xXPFQks5YtaBLwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/selected.png?token=AMI5Y7F5tGzQl1AXIgvvyALHGF1BqRRVks5aVfmMwA%3D%3D" width="500">
 
-Then, you can choose combining method either using band or WCPS(CRISM product, see reference #1) queries.  
+Then, you can choose combining method either using band or WCPS (CRISM product, see reference #1) queries.  
 
 Using band:  
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/10_band_combine.png?token=AQvBJHbeQoSIUDHVNKbyLNhnxV9RjIjWks5YtaB9wA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/band_select.png?token=AMI5Yx_K8dvlh5noN4gVbdt1nNnOeiqGks5aVfmswA%3D%3D" width="500">
 
 Using WCPS Queries:  
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/11_wcps_combine.png?token=AQvBJMd3uHFZb1U5rpe3_nK8KPfbBggFks5YtaC1wA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/wcps_query.png?token=AMI5Y5gbO5nzuPE-CMsmmUR3swmb-GDMks5aVfm-wA%3D%3D" width="500">
 
-## Spectra Analyzing & Spectra Ratio
+## Spectra Analysis & Spectra Ratio
 
 On the right hand side of main page, you can find four buttons giving you general information of PlanetServer, spectra analyzing tool, spectra ratio tool and histogram tool.  
 
-As you can see, you can choose several points and plot them on the same graph.  
+Single spectra and multiple point spectra can be shown in the chart:
 
-You can choose range chart so that you can choose the scale of x-axis.  
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/single_spectra.png?token=AMI5Y_iXGeHdB_caXXGVKGRH4AYPBt2yks5aVfqkwA%3D%3D" width="500">
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/12_add_spectra.png?token=AQvBJJpiLTMCqqtrbakPVMoYsj46nEryks5YtcMKwA%3D%3D" width="500">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/multiple.png?token=AMI5Y_iXGeHdB_caXXGVKGRH4AYPBt2yks5aVfqkwA%3D%3D" width="500">
 
 Also, you can take one of lab result by first choosing category and second choose specific material measurement from lab in order to compare materials on the points you previously chose.(lab product splib02a, see ref#2)  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/13_lab_comparison_spectra.png?token=AQvBJDnl0I04opwnPEQedIl_vLo3BDXPks5YtcQUwA%3D%3D" width="500">  
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/compare_spectra.png?token=AMI5Y-xx2jmeBI4TtRxPWJ0ajkPECiQGks5aVfrpwA%3D%3D" width="500">  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/14_lab_spectra_selections.png?token=AQvBJBiB8nFyKRgIgrPyXnlOSN8v8JOCks5YtcQgwA%3D%3D" width="500">
 
-In third button, you can have the relative ratio of two points' spectras.  
+In third button, you can have the relative ratio of two points'.  
 
 As you can see, your chosen numerator shown as red dot on the map and your chosen denominator shown as blue dot.  
 
-It's also possible to take lab data inside.  
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/ratio.png?token=AMI5Y3UHT9uE9QmQO5cEL3Q9znVtAIkoks5aVfshwA%3D%3D" width="500">  
+
 
 You can download the plot as PNG, PDF, JPEG, and SVG. Also, you can save it as CSV, XLSX, and JSON.
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/15_spectral_ratio.png?token=AQvBJFZlxETLPNgammm_e5Pzg0wMJORmks5YtcRRwA%3D%3D" width="500">  
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/cont_menu_II.png?token=AMI5Y3UHT9uE9QmQO5cEL3Q9znVtAIkoks5aVfshwA%3D%3D" width="500">  
 
 Right click on the coverage, you can see several options as well. You can either select on several coverages and unlock one coverage from several you previously chose.  
 
 Download the coverage in GeoTiff or PNG form is also possible.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/16_right_click_on_coverage.png?token=AQvBJJXH-vafowwLNf3Cyv44-cYnaanZks5YtcVXwA%3D%3D" width="500">
-
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/planetserverv2/17_lock_unselect_on_several_coverage.png?token=AQvBJO2csHn17rD608DIpwDFiLViVCLlks5YtcW_wA%3D%3D" width="500">  
 
 ## For Moon's PlanetServer
 
 On the top of PlanetServer page, you can switch between Mars and Moon by clicking two planets on the left hand side of the bar. Clicking Moon will bring you to Moon's PlanetServer interface.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/Planet-Server-Tutorial/master/Client-Server-Tutorial/7_Top.png?token=AQvBJL9zIgSffe0fAImYZi1BSwfl_O2xks5YruC9wA%3D%3D" width="1000" alt="bar">
+<img src="https://raw.githubusercontent.com/planetserver/ps2-documentation/master/user_documentation/images/moon.png?token=AMI5Y4tgXkt57r4lYB9a9derBClxL5SRks5aVfwqwA%3D%3D" width="1000" alt="bar">
 
 The functions of Moon PlanetServer are identical to those introduced in Mars PlanetServer.  
 
