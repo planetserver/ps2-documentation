@@ -24,6 +24,7 @@ The ingestion of a CRS has the following steps:
 3. paste the new CRS definition (you can use the one from the repository or add your own) and click **add**
 
 ![sec1](images/secore_1.png)
+
 ![sec2](images/secore_2.png)
 
 # Notes
