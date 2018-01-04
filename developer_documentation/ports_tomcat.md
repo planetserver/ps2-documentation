@@ -11,7 +11,7 @@ Ramiro Marco Figuera
 
 # Introduction
 
-After a couple of years of running PlanetServer we decided to use different ports in Tomcat for SECORE, Geoserver and rasdaman. The ports we use are:
+After a couple of years of running PlanetServer we decided to use different ports in Tomcat for SECORE, Geoserver and rasdaman WMS. The ports we use are:
 
 * SECORE --> port 8081
 * WMS --> port 8082
@@ -30,4 +30,4 @@ In order to start and stop each tomcat a script can be found under **/storage/lo
 
 # Notes
 
-This guide works on rasdaman 9.5. Notice that this configuration was specially designed for PlanetServer and might not be needed for other services. Separating the services in different ports will prevent propagating errors in case a service crashes. 
+This guide works on rasdaman 9.5. Notice that this configuration was specially designed for PlanetServer and might not be needed for other services. Separating the services in different ports will prevent propagating errors in case a service crashes.
