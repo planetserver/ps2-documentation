@@ -29,4 +29,4 @@ The ingestion of a CRS has the following steps:
 
 # Notes
 
-This guide work on rasdaman 9.5 and 9.4 versions. Notice that the ingestion of a not defined CRS might change in the future.
+This guide works on rasdaman 9.5 and 9.4 versions. Notice that the ingestion of a not defined CRS might change in the future.
