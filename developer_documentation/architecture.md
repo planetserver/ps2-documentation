@@ -1,4 +1,4 @@
-# PlanetServer architecture Developer guide
+# PlanetServer architecture guide
 
 # Author
 Ramiro Marco Figuera
