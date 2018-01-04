@@ -19,11 +19,11 @@ We highly recommend to follow step by step the installation guide provided by th
 
 1. on the installation section point 2 we proceed as follows:
 
-   yum clean all
+   `yum clean all`
 
-   yum update rasdaman
+   `yum update rasdaman`
 
-   yum search rasdaman
+   `yum search rasdaman`
 
 2. when updating we have noticed that most of the times the process fails. A workaround is to re-install rasdaman. Petascopedb will be safe therefore all the data will still be reachable. NOTE: this process might change in the future
 
