@@ -22,6 +22,22 @@ The server side contains different services. All services need to be installed a
 3. [Geoserver](https://github.com/planetserver/ps2-documentation/blob/master/developer_documentation/geoserver.md)
 4. [SECORE](https://github.com/planetserver/ps2-documentation/blob/master/developer_documentation/secore.md)
 
+In order to restart all services if machines are rebooted or there is a power outage:
+
+1. Manually install Infiniband drivers (ask Florian)
+2. Check if Apache is working `service httpd status` if down then run `service httpd start`
+3. `service rasdaman start`
+4. `service postgresql start`
+5. `service tomcat start`
+6. initialize the python server in **/html/python/** used to stretch the colour of the images. This is done by running `nohup python start.py &`
+
+This should bring up all services and will start working after a few minutes. If services are down please check the following:
+
+1. Check Infiniband is started
+2. Check /var directory has enough space. Apache will not start if it cannot write out logs.
+3. Check SElinux configuration
+
+
 # Client side
 
 The client side only contains WebWorldWind which needs to be deployed and configured as mentioned in the guideline:

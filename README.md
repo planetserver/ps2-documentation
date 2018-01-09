@@ -15,20 +15,23 @@ Ingested datasets derive from NASA Planetary Data System (PDS) and ESA Planetary
 
 ## User Documentation
 
-### user-level documentation 
+#### Web client tutorial
 
-#### PlanetServer Web Client
+* [Web client tutorial](user_documentation/webclient_tutorial.md)
 
-##### PlanetServer web client walkthrough
+#### Notebook tutorial
 
-* [ps-web-client-basic-usage](ps-web-client-basic-usage)
+* [Notebook tutorial](user_documentation/notebook_tutorial.md)
 
 #### PlanetServer API
+
+* [Python API tutorial](user_documentation/python_API_tutorial.md)
 
 ## Developer documentation
 
 ### How to install/deploy server/client
-(with link to existing rasdaman, www documentation)
+
+* [PlanetServer Deployment](developer_documentation/architecture.md)
 
 ### How to ingest data
 (quick steps, with link to repos/scripts)
@@ -36,4 +39,3 @@ Ingested datasets derive from NASA Planetary Data System (PDS) and ESA Planetary
 # More info
 
 on http://planetserver.eu
-
