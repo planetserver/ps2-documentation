@@ -1,0 +1,127 @@
+{
+  "config": {
+
+    "service_url": "http://localhost:8080/rasdaman/ows",
+
+    "tmp_directory": "/tmp/",
+
+    "crs_resolver": "http://localhost:8081/def/",
+
+    "default_crs": "http://localhost:8081/def/crs/PS/0/Moon-equirectangular",
+
+    "subset_correction": true,
+
+    "mock": false,
+
+    "automated": true,
+
+    "default_null_values": [
+     "65535"
+    ]
+  },
+  "input": {
+
+    "coverage_id": "M3G20081118T223204",
+    "paths": [
+
+      "M3G20081118T223204_V01_L2_HACK_simp0.tif"
+    ]
+  },
+  "recipe": {
+
+    "name": "map_mosaic",
+    "options": {
+
+      "tiling": "ALIGNED [0:1023, 0:1023] TILE SIZE 4194304",
+	"wms_import": false,
+		"band_names": [
+"band_1",
+"band_2",
+"band_3",
+"band_4",
+"band_5",
+"band_6",
+"band_7",
+"band_8",
+"band_9",
+"band_10",
+"band_11",
+"band_12",
+"band_13",
+"band_14",
+"band_15",
+"band_16",
+"band_17",
+"band_18",
+"band_19",
+"band_20",
+"band_21",
+"band_22",
+"band_23",
+"band_24",
+"band_25",
+"band_26",
+"band_27",
+"band_28",
+"band_29",
+"band_30",
+"band_31",
+"band_32",
+"band_33",
+"band_34",
+"band_35",
+"band_36",
+"band_37",
+"band_38",
+"band_39",
+"band_40",
+"band_41",
+"band_42",
+"band_43",
+"band_44",
+"band_45",
+"band_46",
+"band_47",
+"band_48",
+"band_49",
+"band_50",
+"band_51",
+"band_52",
+"band_53",
+"band_54",
+"band_55",
+"band_56",
+"band_57",
+"band_58",
+"band_59",
+"band_60",
+"band_61",
+"band_62",
+"band_63",
+"band_64",
+"band_65",
+"band_66",
+"band_67",
+"band_68",
+"band_69",
+"band_70",
+"band_71",
+"band_72",
+"band_73",
+"band_74",
+"band_75",
+"band_76",
+"band_77",
+"band_78",
+"band_79",
+"band_80",
+"band_81",
+"band_82",
+"band_83",
+"band_84",
+"band_85"
+	]
+
+    }
+  }
+}

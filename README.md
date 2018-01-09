@@ -11,6 +11,10 @@ The main Solar System targets for PlanetServer are Mars and the Moon.
 
 Ingested datasets derive from NASA Planetary Data System (PDS) and ESA Planetary Science Archive (PSA).
 
+# Authors:
+
+[@RamiroMF](https://github.com/ramiromf), [@aprossi](https://github.com/aprossi)
+
 # Guides and tutorials
 
 ## User Documentation
@@ -33,8 +37,9 @@ Ingested datasets derive from NASA Planetary Data System (PDS) and ESA Planetary
 
 * [PlanetServer Deployment](developer_documentation/architecture.md)
 
-### How to ingest data
-(quick steps, with link to repos/scripts)
+### How to pre-process and ingest data
+
+* [Data processing and ingestion](developer_documentation/preprocessing_and_ingestion.md)
 
 # More info
 
