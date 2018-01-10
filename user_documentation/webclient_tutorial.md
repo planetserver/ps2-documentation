@@ -146,6 +146,12 @@ Right click on the coverage, you can see several options as well. You can either
 
 Download the coverage in GeoTiff or PNG form is also possible.  
 
+## Histogram
+
+The last button on the right panel allows the user to re-stretched WCPS custom queries images. The stretching tool provides a better way to enhance particular bands of the image. After a WCPS custom query is run, the user only needs to open the hsitogram panel, click on the image and the original histogram will be loaded. By moving the sliders corresponding to each band of the RGB combination and clicking the "Load new min, max for 3 bands" button it will show the new stretching.
+
+![histo](images/histogram.png)
+
 
 ## For Moon's PlanetServer
 
