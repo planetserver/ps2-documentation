@@ -38,7 +38,7 @@ If this is your first time going to our site, you will be asked if you are willi
 
 If you have already done the tour you will land directly on the Client
 
-[intro_web](images/intro_web.png)
+![fam1](images/intro_web.png)
 
 
 This tutorial will go deeper than that pilot.
