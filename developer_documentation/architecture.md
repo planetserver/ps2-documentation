@@ -50,21 +50,16 @@ The client side only contains WebWorldWind which needs to be deployed and config
 
 If service throws a 503 error, it is possibly because of a SElinux configuration error. Run the following script:
 
-`disable SELinux for http to be able to run
-
-petascope proxy via httpd:
-config in this file /etc/httpd/conf/httpd.conf
-
-# Mars server
-#start redis caching service for python stretching server
-service redis start
-
-#start python stretching service
-nohup python start.py
-
-# Moon server
-#start postgresql
-service postgresql start
-
-#start tomcat for rasdaman
-service tomcat start`
+     `disable SELinux for http to be able to run
+     petascope proxy via httpd:
+     config in this file /etc/httpd/conf/httpd.conf
+     # Mars server
+     #start redis caching service for python stretching server
+     service redis start
+     #start python stretching service
+     nohup python start.py
+     # Moon server
+     #start postgresql
+     service postgresql start
+     #start tomcat for rasdaman
+     service tomcat start`
