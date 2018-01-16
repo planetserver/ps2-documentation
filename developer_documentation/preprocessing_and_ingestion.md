@@ -13,6 +13,10 @@ Ramiro Marco Figuera
 
 PlanetServer provides access to two different datasets: CRISM Mars and M3 Moon. Each dataset is pre-processed using different software to prepare it for ingestion into rasdaman.
 
+# Note if doing pre-processing at JUB
+
+All the download and pre-processing of the data should be done in esp-test as this is the machine dedicated to do this process. esp-rasdaman should *only* be used as a service provider.
+
 # CRISM MARS
 
 To prepare the data for ingestion into Rasdaman run the following steps:
