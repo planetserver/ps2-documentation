@@ -20,7 +20,7 @@ After a couple of years of running PlanetServer we decided to use different port
 
 # TOMCAT ports for PlanetServer
 
-We created 3 different directories for each of the services. In our configuration the directories are in **/storage/local/tomcats/**. For each tomcat we have to assign the right port in the server.xml file found in **tomcat_SERVICE/conf/service.xml**.
+We created 3 different directories for each of the services. In our configuration the directories are in **/storage/local/tomcats/**. For each tomcat we have to assign the right port in the server.xml file found in **tomcat_SERVICE/conf/service.xml** (e.g. tomcat_geoserver/conf/service.xml for the geoserver).
 
 1. **<Connector port="8081" protocol="HTTP/1.1"** for SECORE
 2. **<Connector port="8082" protocol="HTTP/1.1"** for WMS
