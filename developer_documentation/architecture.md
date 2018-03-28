@@ -71,4 +71,6 @@ setenforce 0
 /var/lib/tomcats/tomcat_wms/bin/catalina.sh start
 /var/lib/tomcats/tomcat_geoserver/bin/catalina.sh startservice redis start
 nohup python /var/www/html/python/start.py
+service redis start
+nohup python /var/www/html/python/start.py
 ```
