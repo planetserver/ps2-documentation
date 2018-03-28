@@ -69,7 +69,8 @@ If service throws a 503 error, it is possibly because of a SElinux configuration
 setenforce 0
 /var/lib/tomcats/tomcat_secore/bin/catalina.sh start
 /var/lib/tomcats/tomcat_wms/bin/catalina.sh start
-/var/lib/tomcats/tomcat_geoserver/bin/catalina.sh startservice redis start
+/var/lib/tomcats/tomcat_geoserver/bin/catalina.sh start
+service redis start
 nohup python /var/www/html/python/start.py
 service redis start
 nohup python /var/www/html/python/start.py
