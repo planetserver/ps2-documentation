@@ -28,8 +28,16 @@ In order to restart all services if machines are rebooted or there is a power ou
 2. Check if Apache is working `service httpd status` if down then run `service httpd start`
 3. `service rasdaman start`
 4. `service postgresql start`
-5. follow [ports_tomcat.md](ports_tomcat.md)
-6. `service tomcat start`
+5. Start auxiliary tomcats: (after [ports_tomcat.md](ports_tomcat.md) )
+```
+cd /var/lib/tomcats/tomcat_wms/bin/
+sudo ./startup.sh
+cd /var/lib/tomcats/tomcat_secore/bin/
+sudo ./startup.sh
+cd /var/lib/tomcats/tomcat_geoserver/bin/
+sudo ./startup.sh
+```
+6. Start primary (petascope) tomcat: `service tomcat start`
 7. initialize the python server in **/html/python/** used to stretch the colour of the images. This is done by running `nohup python start.py &`
 
 This should bring up all services and will start working after a few minutes. If services are down please check the following:
