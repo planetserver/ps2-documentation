@@ -50,7 +50,7 @@ The client side only contains WebWorldWind which needs to be deployed and config
 
 If service throws a 503 error, it is possibly because of a SElinux configuration error. Run the following script:
 
-     `disable SELinux for http to be able to run
+     disable SELinux for http to be able to run
      petascope proxy via httpd:
      config in this file /etc/httpd/conf/httpd.conf
      # Mars server
@@ -62,4 +62,13 @@ If service throws a 503 error, it is possibly because of a SElinux configuration
      #start postgresql
      service postgresql start
      #start tomcat for rasdaman
-     service tomcat start`
+     service tomcat start
+     
+ Bang's method of fixing SElinux:
+```
+setenforce 0
+/var/lib/tomcats/tomcat_secore/bin/catalina.sh start
+/var/lib/tomcats/tomcat_wms/bin/catalina.sh start
+/var/lib/tomcats/tomcat_geoserver/bin/catalina.sh startservice redis start
+nohup python /var/www/html/python/start.py
+```
