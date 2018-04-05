@@ -38,7 +38,7 @@ cd /var/lib/tomcats/tomcat_geoserver/bin/
 sudo ./startup.sh
 ```
 6. Start primary (petascope) tomcat: `service tomcat start`
-7. initialize the python server in **/html/python/** used to stretch the colour of the images. This is done by running `nohup python start.py &`
+7. initialize the python server in **/var/www/html/python/** used to stretch the colour of the images. This is done by running `nohup python start.py &`
 
 This should bring up all services and will start working after a few minutes. If services are down please check the following:
 
@@ -52,7 +52,7 @@ This should bring up all services and will start working after a few minutes. If
 The client side only contains WebWorldWind which needs to be deployed and configured as mentioned in the guideline:
 
 1. [WebWorldWind](https://github.com/planetserver/ps2-documentation/blob/master/developer_documentation/web_world_wind_devel_guide.md)
-2. Once both sides are deployed we need to initialize the python server in **/html/python/** used to stretch the colour of the images. This is done by running `nohup python start.py &`
+2. Once both sides are deployed we need to initialize the python server in **/var/www/html/python/** used to stretch the colour of the images. This is done by running `nohup python start.py &`
 
 # NOTES
 
