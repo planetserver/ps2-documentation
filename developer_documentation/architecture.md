@@ -83,3 +83,80 @@ nohup python /var/www/html/python/start.py
 service redis start
 nohup python /var/www/html/python/start.py
 ```
+# Troubleshooting
+## Log files
+The log files are located in
+```
+/var/lib/tomcats/tomcat_wms/logs/
+/var/lib/tomcats/tomcat_secore/logs/
+/var/lib/tomcats/tomcat_geoserver/logs/
+/usr/share/tomcat/logs/
+```
+View them using command such as
+```
+ls -trahl /usr/share/tomcat/logs/
+```
+Read them using commands such as:
+```
+tail -1000 /var/lib/tomcats/tomcat_wms/logs/catalina.2018-04-04.log
+tail -1000 /var/lib/tomcats/tomcat_wms/logs/catalina.out
+tail -1000 /var/lib/tomcats/tomcat_wms/logs/localhost.2018-04-04.log
+tail -1000 /var/lib/tomcats/tomcat_wms/logs/localhost_access_log.2018-04-04.txt
+tail -1000 /var/lib/tomcats/tomcat_wms/logs/manager.2018-04-04.log
+```
+Sometimes Tomcat may not shut down correctly, to check if it did turn off all services (startup sequence in reverse):
+```
+service tomcat stop
+cd /var/lib/tomcats/tomcat_geoserver/bin/
+sudo ./shutdown.sh
+cd /var/lib/tomcats/tomcat_secore/bin/
+sudo ./shutdown.sh
+cd /var/lib/tomcats/tomcat_wms/bin/
+sudo ./shutdown.sh
+service postgresql stop
+systemctl stop rasdaman
+```
+Then run a diagnostic on the ports 808*:
+```
+sudo netstat -tulpn |grep 808
+```
+When all tomcats are running, ports 8080,8081,8082,8083 should be in a state LISTEN.
+When all tomcats are stopped, ports 8080,8081,8082,8083 should not appear on the list.
+If a process does appear after tomcat was stopped, its a zombie and needs to be terminated.
+For example if netstat shows a zombie tomcat as 12345/java, you can kill it using
+```
+sudo kill -15 12345
+```
+Once the zombie process is terminated, you can restart databases and tomcats by running startup sequence:
+```
+systemctl start rasdaman
+service postgresql start
+cd /var/lib/tomcats/tomcat_wms/bin/
+sudo ./startup.sh
+cd /var/lib/tomcats/tomcat_secore/bin/
+sudo ./startup.sh
+cd /var/lib/tomcats/tomcat_geoserver/bin/
+sudo ./startup.sh
+service tomcat start
+```
+If a problem persists, it is possible that the database did not shutdown correctly and has unreleased locks.
+To confirm check the logs of the petascope tomcat to see if there are complains about *liquibase*.
+```
+tail -1000 /usr/share/tomcat/logs/catalina.2018-04-04.log
+```
+If you do see a compaint about liquibase.exception.LockException, you must manually connect to the database:
+```
+sudo -u postgres /usr/bin/psql
+```
+Check if the lock exists when the database and tomcats are offline:
+```
+\l
+\c petascopedb
+\dt
+select * from databasechangeloglock LIMIT 10;
+```
+You can remove this lock (make sure database and tomcats are all turned off first) by running:
+```
+DELETE FROM ONLY public.databasechangeloglock WHERE id = 1;
+```
+
