@@ -104,6 +104,8 @@ tail -1000 /var/lib/tomcats/tomcat_wms/logs/localhost.2018-04-04.log
 tail -1000 /var/lib/tomcats/tomcat_wms/logs/localhost_access_log.2018-04-04.txt
 tail -1000 /var/lib/tomcats/tomcat_wms/logs/manager.2018-04-04.log
 ```
+
+## Zombies
 Sometimes Tomcat may not shut down correctly, to check if it did turn off all services (startup sequence in reverse):
 ```
 service tomcat stop
@@ -139,6 +141,8 @@ cd /var/lib/tomcats/tomcat_geoserver/bin/
 sudo ./startup.sh
 service tomcat start
 ```
+
+## Deadlocks
 If a problem persists, it is possible that the database did not shutdown correctly and has unreleased locks.
 To confirm check the logs of the petascope tomcat to see if there are complains about *liquibase*.
 ```
@@ -185,3 +189,11 @@ sudo cp rasdaman.war.backup rasdaman.war
 ```
 Shutdown all tomcats and databases and restart them.
 In a few minutes PS should be working again.
+
+## Ghosts
+Having unused apps deployed on tomcat will create memory leaks. 
+Make sure to undeploy all unused apps.
+To undeploy, first create a backup of the * .war file by copying it to * .war.backup, 
+then use manager app interface to first stop the app, then to undeploy it. 
+This will remove the app and all its files. 
+Finally shutdown and restart all tomcats and databases.
