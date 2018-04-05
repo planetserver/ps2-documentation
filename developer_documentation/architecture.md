@@ -159,4 +159,29 @@ You can remove this lock (make sure database and tomcats are all turned off firs
 ```
 DELETE FROM ONLY public.databasechangeloglock WHERE id = 1;
 ```
-
+Manually releaseing the lock on the petascope may prevent Tomcat WMS from starting, 
+because of a mismatch in a cached state of the webapp. 
+This can be solved by re-deploying the rasdaman webapp. 
+First create a backup of the webapp:
+```
+cd /var/lib/tomcats/tomcat_wms/webapps
+sudo cp rasdaman.war rasdaman.war.backup
+```
+Next create an SSH tunnel to the port 8082 on rasdaman:
+```
+ssh -L 2345:localhost:8082 esp-rasdaman
+```
+Log into manager webapp (http://localhost:2345/manager/html)[http://localhost:2345/manager/html]
+Using credentials awailable in
+```
+cat /var/lib/tomcats/tomcat_wms/conf/tomcat-users.xml
+```
+Undeploy rasdaman using manager app (make sure its backed up!). 
+This will remove the rasdaman.war, and all the relevant directories.
+Restore rasdaman from backup.
+```
+cd /var/lib/tomcats/tomcat_wms/webapps
+sudo cp rasdaman.war.backup rasdaman.war
+```
+Shutdown all tomcats and databases and restart them.
+In a few minutes PS should be working again.
