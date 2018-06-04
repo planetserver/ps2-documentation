@@ -24,6 +24,8 @@ To prepare the data for ingestion into Rasdaman run the following steps:
 1. Locate the data in http://pds-geosciences.wustl.edu/missions/mro/crism.htm
 2. Download trr3 files .img, .lbl and ddr files .img and .lbl
   * `wget -c --reject="index.html*" --no-parent -l1 -r -A.IMG,.LBL -nH -nd -np [URL containing files]`
+  note,if this don't work because of robot restrictions, turn them off like this:
+    * `wget -c -e robots=off --reject="index.html*" --no-parent -l1 -r -A.IMG,.LBL -nH -nd -np [URL containing files]`
 3. Place DDRs and TRR3 files in different directories.
 4. Then follow guide to process the data: [autocat](https://github.com/planetserver/autocat)
 5. Place the output processed files from CAT into a directory then run the following scripts:
