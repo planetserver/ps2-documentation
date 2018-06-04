@@ -29,6 +29,10 @@ To prepare the data for ingestion into Rasdaman run the following steps:
   for example
     * `wget -c -e robots=off --reject="index.html*" --no-parent -l1 -r -A.img,.lbl -nH -nd -np http://pds-geosciences.wustl.edu/mro/mro-m-crism-3-rdr-targeted-v1/mrocr_2104/trdr/2010/2010_213/frt0001a11b/`
 3. Place DDRs and TRR3 files in different directories.
+  Note that the DDR parent directory name does not correspond to the TRR one, for instance for the above example, directory name is:
+    * `http://pds-geosciences.wustl.edu/mro/mro-m-crism-6-ddr-v1/mrocr_1002/ddr/2010/2010_213/frt0001a11b/`
+  So to download it use command like this:
+    * `wget -c -e robots=off --reject="index.html*" --no-parent -l1 -r -A.img,.lbl -nH -nd -np http://pds-geosciences.wustl.edu/mro/mro-m-crism-3-rdr-targeted-v1/mrocr_2104/trdr/2010/2010_213/frt0001a11b/`
 4. Then follow guide to process the data: [autocat](https://github.com/planetserver/autocat)
 5. Place the output processed files from CAT into a directory then run the following scripts:
   1. `ls -1 *img > list.txt`
