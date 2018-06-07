@@ -44,8 +44,10 @@ To prepare the data for ingestion into Rasdaman run the following steps:
         Start ENVI and AutoCAT, then in the terminal from which you've launched xpra client press `ctrl+c` to detach.
         
      To run Autocat you need to have DDR and TRDR in the same directory. It is enough to create symbolic links for the computer to find the files. Create symbolic link using this command:
-     ```for i in `ls -1 *trr3.img`; do ln -s ../DDR/$(sed "s/_trr3/_ddr1/g"<<<`sed "s/_if/_de/g"<<<$i`) .; done
-        for i in `ls -1 *trr3.lbl`; do ln -s ../DDR/$(sed "s/_trr3/_ddr1/g"<<<`sed "s/_if/_de/g"<<<$i`) .; done```
+     ```
+     for i in `ls -1 *trr3.img`; do ln -s ../DDR/$(sed "s/_trr3/_ddr1/g"<<<`sed "s/_if/_de/g"<<<$i`) .; done
+     for i in `ls -1 *trr3.lbl`; do ln -s ../DDR/$(sed "s/_trr3/_ddr1/g"<<<`sed "s/_if/_de/g"<<<$i`) .; done
+     ```
 5. Place the output processed files from CAT into a directory then run the following scripts:
   1. `ls -1 *img > list.txt`
   2. run [translate.sh](scripts/translate.sh) list.txt
