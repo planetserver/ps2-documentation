@@ -34,6 +34,14 @@ To prepare the data for ingestion into Rasdaman run the following steps:
   So to download it use command like this:
     * `wget -c -e robots=off --reject="index.html*" --no-parent -l1 -r -A.img,.lbl -nH -nd -np http://pds-geosciences.wustl.edu/mro/mro-m-crism-6-ddr-v1/mrocr_1002/ddr/2010/2010_213/frt0001a11b/`
 4. Then follow guide to process the data: [autocat](https://github.com/planetserver/autocat)
+    Note running autocat requires x-server, to run it in the background use xpra:
+        First on the esp-test start xpra server:
+        `screen
+        xpra start :100 --start-child=xterm`
+        Exit screen with `ctrl+a,d` exit ssh
+        Then on the client attach xpra:
+        `xpra --opengl=no attach ssh/username@esp-test/100`
+        Start ENVI and AutoCAT, then in the terminal from which you've launched xpra client press `ctrl+c` to detach.
 5. Place the output processed files from CAT into a directory then run the following scripts:
   1. `ls -1 *img > list.txt`
   2. run [translate.sh](scripts/translate.sh) list.txt
