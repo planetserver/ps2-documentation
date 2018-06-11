@@ -48,6 +48,8 @@ To prepare the data for ingestion into Rasdaman run the following steps:
      for i in `ls -1 *trr3.img`; do ln -s ../DDR/$(sed "s/_trr3/_ddr1/g"<<<`sed "s/_if/_de/g"<<<$i`) .; done
      for i in `ls -1 *trr3.lbl`; do ln -s ../DDR/$(sed "s/_trr3/_ddr1/g"<<<`sed "s/_if/_de/g"<<<$i`) .; done
      ```
+   Note also that the coverages that cross the 180 meridian can not be pre-processed with CAT, 
+   in order to locate them run [this script](scripts/getEWLon.sh) for each coverage name on the list.
 5. Place the output processed files from CAT into a directory then run the following scripts:
   1. `ls -1 *img > list.txt`
   2. run [translate.sh](scripts/translate.sh) list.txt
