@@ -77,7 +77,7 @@ To prepare the data for ingestion into Rasdaman run the following steps:
 4. run [paral_replace.sh](scripts/paral_replace.sh) list.txt
 5. run [get_footprints_m3.sh](scripts/get_footprints_m3.sh) list.txt
 5. copy [m3_test_ingredient.json](scripts/m3_test_ingredient.json)
-6. run [ingredient_creation_m3.sh](scripts/ingredient_creation_m3.sh)
+6. run [ingredient_creation_m3.sh](scripts/ingredient_creation_m3.sh) list.txt
 7. `cd ingredients`
 8. run [create_ingestion_script.sh](scripts/create_ingestion_script.sh)
 9. run `./ingestion.sh`
