@@ -50,6 +50,11 @@ To prepare the data for ingestion into Rasdaman run the following steps:
      ```
    Note also that the coverages that cross the 180 meridian can not be pre-processed with CAT, 
    in order to locate them run [this script](scripts/getEWLon.sh) for each coverage name on the list.
+   
+   Note that sometimes wget may fail to download the file, to check if there are any .lbl files empty, run this:
+   ```
+    for i in `ls -1 *.lbl`; do if test `wc $i | cut -d' ' -f2` -lt 1; then echo $i; fi; done
+   ```
 5. Place the output processed files from CAT into a directory then run the following scripts:
   1. `ls -1 *img > list.txt`
   2. run [translate.sh](scripts/translate.sh) list.txt
