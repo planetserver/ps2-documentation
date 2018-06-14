@@ -62,6 +62,8 @@ To prepare the data for ingestion into Rasdaman run the following steps:
   3. `cd tif/`
   4. copy in the directory [test_ingestion_ingredient_l.json](scripts/test_ingestion_ingredient_l.json) and [test_ingestion_ingredient_s.json](scripts/test_ingestion_ingredient_s.json)
   5. run `ls -1 *l_trr3_CAT_scale_trial_p.img.tif > list_l.txt` and `ls -1 *s_trr3_CAT_scale_trial_p.img.tif > list_s.txt`
+  NOTE: there is a bug in pre-processing of the S coverages, so names are different, use:
+  `ls -1 *s_trr3_CAT_phot_p.img.tif > list_s.txt`
   6. `mkdir ingredients`
   7. run [ingredient_creation_l.sh](scripts/ingredient_creation_l.sh) list_l.txt
   8. run [ingredient_creation_s.sh](scripts/ingredient_creation_s.sh) list_s.txt
