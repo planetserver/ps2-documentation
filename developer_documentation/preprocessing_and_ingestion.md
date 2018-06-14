@@ -83,5 +83,6 @@ To prepare the data for ingestion into Rasdaman run the following steps:
 9. run `./ingestion.sh`
 10. add footprints to ps2 psql database using [https://github.com/planetserver/add_foot_print_to_moon_database](https://github.com/planetserver/add_foot_print_to_moon_database)
 11. update footprints on ps2 database with geographic metadata from petascope
+    Use [this script](scripts/getMetadataFromPetascope.sh) to produce SQL commands for updating the PS2 database.
 
 # Notes
