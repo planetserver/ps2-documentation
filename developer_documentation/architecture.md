@@ -197,3 +197,6 @@ To undeploy, first create a backup of the * .war file by copying it to * .war.ba
 then use manager app interface to first stop the app, then to undeploy it. 
 This will remove the app and all its files. 
 Finally shutdown and restart all tomcats and databases.
+
+## WCPS stretched combinations not working
+Check that the python server is running on port 8090.
