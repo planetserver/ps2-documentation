@@ -8,6 +8,7 @@ Ramiro Marco Figuera
 |Version|Name|Note|
 |---|---|---|
 |1|Ramiro Marco Figuera|First created in Jan. 2018|
+|2|Mikhail Minin|Work in progress|
 
 # Introduction
 
@@ -15,7 +16,13 @@ PlanetServer provides access to two different datasets: CRISM Mars and M3 Moon. 
 
 # Note if doing pre-processing at JUB
 
-All the download and pre-processing of the data should be done in esp-test as this is the machine dedicated to do this process. esp-rasdaman should *only* be used as a service provider.
+1. All the download and pre-processing of the data should be done in esp-test as this is the machine dedicated to do this process. esp-rasdaman should *only* be used as a service provider.
+
+2. After downloading, preprocessing and ingestion, data should be moved from esp-test to shoggoth to free up space for processing of the next batch. From the TRDR directory run:
+  * `rsync -aqz mrocr_xxxx /storage/shoggothnfs/data/data/MARS/MRO/CRISM/TRDR/`
+
+Where xxxx is the batch number (eg mrocr_2102).
+
 
 # CRISM MARS
 
